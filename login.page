@@ -1,0 +1,15 @@
+def login():
+    correct_user = "admin"
+    correct_pass = "secret123"
+
+    user_input = input("Enter username: ")
+    pass_input = input("Enter password: ")
+
+    if user_input == correct_user and pass_input == correct_pass:
+        print("Login successful!")
+        return True
+    else:
+        print("Invalid username or password.")
+        return False
+
+login()
